@@ -1,10 +1,16 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: Jest Coverage Action
+description: Comments PR with Jest Coverage stats
+author: Insider Development
+branding:
+  icon: percent
+  color: green
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  github-token:
+    description: Github token
+    required: true
+  lcov-file:
+    description: The location of the lcov.info file
+    required: false
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: node12
+  main: dist/main.js

@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
+  "name": "jest-coverage-action",
   "version": "0.0.0",
-  "private": true,
-  "description": "TypeScript template action",
+  "private": false,
+  "description": "Jest Coverage Github Action",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -15,17 +15,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/insiderdev/jest-coverage-action.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "YourNameOrOrganization",
+  "author": "Insider Development",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0"
+    "@actions/artifact": "^0.3.2",
+    "@actions/core": "^1.2.4",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^2.2.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
